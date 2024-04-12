@@ -1,65 +1,26 @@
-URL Scan Tool
-Description
-This tool provides a Python script for scanning URLs and assessing website risks through an API. It handles user authentication, registration, URL scanning with customizable scan options, and outputs scan results in multiple formats (JSON, text, and HTML). The tool is designed to simplify the process of analyzing websites for potential security risks.
+# URL Scan Tool
 
-Features
-User authentication and registration.
-Scanning URLs with configurable options.
-Outputs results in JSON, plain text, and HTML format.
-Error handling and detailed debug information.
-Supports handling of screenshots within the HTML output.
-Requirements
-Python 3.x
-Requests library
-Installation
-Clone the Repository
-First, clone this repository to your local machine using:
+## Description
+**URL Scan Tool** is a Python-based application designed to scan URLs and assess website risks through an API. It supports user authentication, registration, customizable scanning options, and outputs scan results in multiple formats.
 
-bash
-Copy code
+## Prerequisites
+Before using this tool, you need to **register an account** at [URLScore.ai](https://urlscore.ai). After registration, ensure you verify your account via the confirmation email that may arrive in your inbox or spam folder.
+
+## Features
+- **Authentication and Registration**: Manage user login and registration directly from the script.
+- **Flexible Scanning Options**: Customize scanning based on DNS, IP, page, and technology checks.
+- **Multiple Output Formats**: Outputs scan results in JSON, plain text, and HTML for easy review.
+- **Screenshot Integration**: Includes webpage screenshots in the HTML output for visual reference.
+
+## Requirements
+- **Python 3.x**
+- **Requests Library**: This project relies on the Requests library to handle HTTP requests.
+
+## Installation
+
+Clone the repository and install the necessary Python packages.
+
+```bash
 git clone https://github.com/your-github-username/url-scan-tool.git
 cd url-scan-tool
-Install Dependencies
-This project requires Python 3 and the following Python libraries installed:
-
-Requests
-You can install these packages via pip:
-
-bash
-Copy code
 pip install requests
-Usage
-Setting Up Credentials
-Login Credentials: Create a login.txt file in the root directory with your email and password formatted as email:password.
-URL List: Create a url.txt file in the root directory with the list of URLs you want to scan, each on a new line.
-Configuring Scan Options
-Create a ScanOptions.txt file in the root directory to specify the scanning options. Use the following format:
-
-vbnet
-Copy code
-dns_checks:true
-ip_checks:false
-page_checks:true
-webtech_checks:true
-Running the Script
-To run the script, execute:
-
-bash
-Copy code
-python urlscore.py
-Output
-The script saves the scan results in the ScanResults directory in three formats: JSON, plain text, and HTML. Each file will be named using the domain and the scan date/time.
-
-Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-Distributed under the MIT License. See LICENSE for more information.
-
-Contact
-info@urlscore.ai
