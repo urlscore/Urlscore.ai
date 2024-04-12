@@ -1,4 +1,4 @@
-# URL Scan Tool
+**URL Scan Tool**
 
 ## Description
 **URL Scan Tool** is a Python-based application designed to scan URLs and assess website risks through an API. It supports user authentication, registration, customizable scanning options, and outputs scan results in multiple formats.
